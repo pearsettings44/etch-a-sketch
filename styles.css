@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   font-family: "Staatliches", cursive, sans-serif;
   min-height: 100vh;
-  background-color: blueviolet;
+  background-color: rgb(114, 95, 255);
 }
 
 #grid-container {
