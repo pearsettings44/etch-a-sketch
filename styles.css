@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -15,10 +17,11 @@ body {
 #grid-container {
   display: flex;
   flex-wrap: wrap;
-  height: 802px;
-  width: 802px;
+  height: 702px;
+  width: 702px;
   border: 1px solid black;
   background-color: white;
+  margin: auto;
 }
 
 .cell {
@@ -44,4 +47,19 @@ a {
   margin-left: 5px;
   width: auto;
   height: 24px;
+}
+
+.hover {
+  background-color: black;
+}
+
+#header {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 120px;
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 8px 8px #ff1f8f, 20px 20px #000000;
 }
