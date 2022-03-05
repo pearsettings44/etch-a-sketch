@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Etch a Sketch</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-  </head>
 
-  <body>
-    <header>
-      <h1 id="header">ETCH A SKETCH</h1>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etch a Sketch</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
 
-    <div id="content">
-      <div id="menu">
-          <!--clear / size / black / random color-->
-      </div>
-      <div id="grid-container"></div>
+<body>
+  <header>
+    <h1 id="header">ETCH A SKETCH</h1>
+  </header>
+
+  <div id="menu">
+    <div class="button-container">
+      <button id="reset" class="button-52" role="button">Reset</button>
     </div>
+    <div class="button-container">
+      <button id="black" class="button-52" role="button">Black</button>
+    </div>
+    <div class="button-container">
+      <button id="rgb" class="button-52" role="button">RGB</button>
+    </div>
+    <div class="button-container">
+      <button id="rgb" class="button-52" role="button">16x16</button>
+    </div>
+    <div class="button-container">
+      <button id="rgb" class="button-52" role="button">32x32</button>
+    </div>
+    <div class="button-container">
+      <button id="rgb" class="button-52" role="button">64x64</button>
+    </div>
+  </div>
 
-    <footer>
-      <h2>
-        <a href="https://github.com/pearsettings44" target="_blank"
-          >© copyright pearsettings44</a
-        >
-      </h2>
-      <a href="https://github.com/pearsettings44"
-        ><img id="git" src="images/gitlogo.png" alt="github" target="_blank"
-      /></a>
-    </footer>
-  </body>
+  <div id="content">
+    <div id="grid-container"></div>
+  </div>
+
+  <footer>
+    <h2>
+      <a href="https://github.com/pearsettings44" target="_blank">© copyright pearsettings44</a>
+    </h2>
+    <a href="https://github.com/pearsettings44"><img id="git" src="images/gitlogo.png" alt="github"
+        target="_blank" /></a>
+  </footer>
+</body>
+
 </html>
