@@ -54,7 +54,7 @@ a {
 }
 
 .hover {
-  background-color: black;
+  background-color: rgb(255, 0, 0);
 }
 
 #header {
@@ -114,5 +114,9 @@ a {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.black {
+  background-color: black;
 }
 
