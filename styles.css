@@ -54,7 +54,7 @@ a {
 }
 
 .hover {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(0, 0, 0);
 }
 
 #header {
@@ -116,7 +116,7 @@ a {
   gap: 20px;
 }
 
-.black {
-  background-color: black;
+.red {
+  background-color: red;
 }
 

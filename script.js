@@ -1,8 +1,8 @@
 const gridContainer = document.querySelector("#grid-container");
 const gridContainerDim = gridContainer.clientWidth;
 const resetButton = document.querySelector("#reset");
+const redButton = document.querySelector("#red");
 const blackButton = document.querySelector("#black");
-const rgbButton = document.querySelector("#rgb");
 const SixteenButton = document.querySelector("#size16");
 const ThirtyTwoButton = document.querySelector("#size32");
 const SixtyFourButton = document.querySelector("#size64");
@@ -27,21 +27,32 @@ function reset() {
     let cell = cells[counter];
     // Removing the class hover will make the grid white again.
     cell.classList.remove("hover");
+    cell.classList.remove("red");
   }
 }
 
-function hover(e) {
-  //  hover(e): Add color to cell.
+function hoverDefault(e) {
+  //  hover(e): Add default color (black) to cell.
   e.target.classList.add("hover");
+}
+
+function hoverRed(e) {
+  //  hover(e): Add color red to cell.
+  e.target.classList.add("red");
+}
+
+function red() {
+  // red(): Make the color red
+  gridContainer.addEventListener("mouseover", hoverRed);
 }
 
 function black() {
   // black(): Make the color black
-  gridContainer.removeEventListener("mouseover", hover);
-  gridContainer.addEventListener("mouseover", hover);
+  gridContainer.removeEventListener("mouseover", hoverRed);
 }
 
 resetButton.addEventListener("click", reset);
+redButton.addEventListener("click", red);
 blackButton.addEventListener("click", black);
 
 ThirtyTwoButton.addEventListener("click", function () {
@@ -67,7 +78,7 @@ SixtyFourButton.addEventListener("click", function () {
 });
 
 SixteenButton.addEventListener("click", function () {
-  // Makes the grid dimentions 16x16
+  // Makes the grid dimentions
   if (gridContainer.children.length === 16 * 16) {
     return;
   }
@@ -78,4 +89,4 @@ SixteenButton.addEventListener("click", function () {
 });
 
 createGrid(16);
-gridContainer.addEventListener("mouseover", hover);
+gridContainer.addEventListener("mouseover", hoverDefault);
