@@ -20,8 +20,8 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  height: 702px;
-  width: 702px;
+  height: auto;
+  width: 700px;
   border: 1px solid black;
   background-color: white;
   margin: auto;
